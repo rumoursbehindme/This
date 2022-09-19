@@ -1,0 +1,21 @@
+
+$ const name = "Frank";
+$ const aname = "Rj"  ;
+
+<div class="container">
+    <h1>Hello ${input.name}!</h1>
+    <h3>Hello ${input.aname}</h3>
+    $ const colors = ["red", "green", "blue"];
+    <if(colors.length)>
+        <ul>
+            <for|color| of=colors>
+                <li style={
+                    color: color
+                }>${color}</li>
+            </for>
+        </ul>
+    </if>
+    <else>
+        <div>No colors!</div>
+    </else>
+</div>
